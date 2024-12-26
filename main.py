@@ -2,7 +2,7 @@ import pickle
 
 
 # Load the trained model and vectorizer
-filename = 'categories_classification_model.pkl'
+filename = "D:\\NLP\\categories_classification\\categories_classification_model.pkl"
 with open(filename, 'rb') as file:
     clf, vectorizer = pickle.load(file)
 
