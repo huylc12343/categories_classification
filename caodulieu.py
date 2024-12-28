@@ -51,10 +51,10 @@ def get_articles_from_multiple_pages(base_url, num_pages):
 
 
 # Thay link cua chu de can lay vao day
-base_url = "https://vnexpress.net/bong-da"
+base_url = "https://vnexpress.net/so-hoa"
 
 # Số trang muốn lấy dữ liệu
-num_pages = 15
+num_pages = 5
 
 # Lấy nội dung từ nhiều trang
 articles = get_articles_from_multiple_pages(base_url, num_pages)
@@ -63,6 +63,6 @@ articles = get_articles_from_multiple_pages(base_url, num_pages)
 df = pd.DataFrame({"Content": articles})
 
 # Lưu DataFrame vào file Excel
-df.to_excel("bongda_new.xlsx", index=False)
+df.to_excel("sohoa_new_test.xlsx", index=False)
 
 print("Dữ liệu đã được lưu vào file Excel.")
